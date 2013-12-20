@@ -156,7 +156,7 @@ namespace NotJustMaple.WebService.FuelEconomy.Models
 
         private string youSaveSpendField;
 
-        private EmissionsInfo[][] _emissionsInfoListField;
+        private NotJustMaple.WebService.FuelEconomy.Models.EmissionInfo.EmissionsInfo[][] _emissionsInfoListField;
 
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
