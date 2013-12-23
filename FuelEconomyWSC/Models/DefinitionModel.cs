@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace NotJustMaple.WebService.FuelEconomy.Models
+namespace NotJustMaple.WebService.FuelEconomy.API.Models
 {
     public class DefinitionModel
     {

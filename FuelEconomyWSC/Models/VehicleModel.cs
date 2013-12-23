@@ -5,7 +5,7 @@ using System.Diagnostics;
 using System.Xml.Schema;
 using System.Xml.Serialization;
 
-namespace NotJustMaple.WebService.FuelEconomy.Models
+namespace NotJustMaple.WebService.FuelEconomy.API.Models
 {
     /// <summary>
     /// Implementation of http://www.fueleconomy.gov/feg/ws/index.shtml#vehicle
@@ -156,7 +156,7 @@ namespace NotJustMaple.WebService.FuelEconomy.Models
 
         private string youSaveSpendField;
 
-        private NotJustMaple.WebService.FuelEconomy.Models.EmissionInfo.EmissionsInfo[][] _emissionsInfoListField;
+        private NotJustMaple.WebService.FuelEconomy.API.Models.EmissionInfo.EmissionsInfo[][] _emissionsInfoListField;
 
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]

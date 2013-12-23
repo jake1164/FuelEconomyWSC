@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.cs" Inherits="NotJustMaple.WebService.FuelEconomy.WebApiApplication" Language="C#" %>
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="NotJustMaple.WebService.FuelEconomy.API.WebApiApplication" Language="C#" %>

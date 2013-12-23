@@ -8,7 +8,7 @@ using System.Diagnostics;
 using System.Xml.Schema;
 using System.Xml.Serialization;
 
-namespace NotJustMaple.WebService.FuelEconomy.Models
+namespace NotJustMaple.WebService.FuelEconomy.API.Models
 {
     public class EmissionInfo
     {

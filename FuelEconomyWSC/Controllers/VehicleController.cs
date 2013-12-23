@@ -6,15 +6,15 @@ using System.Web.Mvc;
 using System.IO;
 using System.Net;
 using System.Xml.Serialization;
-using NotJustMaple.WebService.FuelEconomy.Models;
+using NotJustMaple.WebService.FuelEconomy.API.Models;
 
-namespace NotJustMaple.WebService.FuelEconomy.Controllers
+namespace NotJustMaple.WebService.FuelEconomy.API.Controllers
 {
     public class VehicleController : Controller
     {
         private const String RootURI = "http://www.fueleconomy.gov/ws/rest/";
         //
-        // GET: /Vecicle/
+        // GET: /Vehicle/
 
         public ActionResult Index()
         {
@@ -23,6 +23,7 @@ namespace NotJustMaple.WebService.FuelEconomy.Controllers
 
         public MenuItemModel GetYears()
         {
+            
             return Request<MenuItemModel>("vehicle/menu/year");
         }
 

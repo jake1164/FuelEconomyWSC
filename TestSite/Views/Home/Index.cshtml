@@ -9,7 +9,7 @@
         <span class="editor-label">Year</span>
     </div>
     <div class=" editor-field">
-        <select id="year" style="width:200px;"></select>
+        <select id="years" style="width:200px;" data-bind="options: years, optionsText: 'Text', optionsValue: 'Value', value: selectedYear"></select>
     </div>
 
     <div class="editor-label">
@@ -35,10 +35,6 @@
 
 </form>
 
-
-<script type="text/javascript">
-    @document.ready(){
-
-
-    }
-</script>
+@section scripts {
+    <script src="@Url.Content("~/Scripts/home.js")" type="text/javascript" ></script>
+}
