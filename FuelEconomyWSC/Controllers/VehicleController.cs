@@ -10,7 +10,7 @@ using NotJustMaple.WebService.FuelEconomy.Models;
 
 namespace NotJustMaple.WebService.FuelEconomy.Controllers
 {
-    public class VecicleController : Controller
+    public class VehicleController : Controller
     {
         private const String RootURI = "http://www.fueleconomy.gov/ws/rest/";
         //
@@ -27,7 +27,7 @@ namespace NotJustMaple.WebService.FuelEconomy.Controllers
         }
 
 
-        public T Request<T>(string path)
+        public new T Request<T>(string path)
         {
             Uri uri = new Uri(new Uri(RootURI), path);
 

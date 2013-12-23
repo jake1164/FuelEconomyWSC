@@ -10,7 +10,6 @@ namespace TestSite.Controllers
     {
         //
         // GET: /Home/
-        
 
         public ActionResult Index()
         {
