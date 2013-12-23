@@ -21,10 +21,10 @@ namespace NotJustMaple.WebService.FuelEconomy.API.Controllers
             return View();
         }
 
-        public MenuItemModel GetYears()
+        public IEnumerable<MenuItem> GetYears()
         {
-            
-            return Request<MenuItemModel>("vehicle/menu/year");
+            MenuItemModel years = Request<MenuItemModel>("vehicle/menu/year");
+            return years.Items.ToList();
         }
 
 

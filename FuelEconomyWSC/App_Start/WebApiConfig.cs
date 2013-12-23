@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
 
-namespace FuelEconomyWSC
+namespace NotJustMaple.WebService.FuelEconomy.API
 {
     public static class WebApiConfig
     {
