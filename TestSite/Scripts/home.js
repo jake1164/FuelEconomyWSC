@@ -4,7 +4,7 @@ var Vehicle = function () {
     self.years = ko.observableArray();
     self.selectedYear = ko.observable();
 
-    var jqxhr = $.getJSON("/Vehicle/GetYears", function (allData) {
+    var jqxhr = $.getJSON("/api/Vehicle/GetYears", function (allData) {
         alert("Foo");
         self.years.removeAll();
         $.each(allData.Items, function (k, v) {
