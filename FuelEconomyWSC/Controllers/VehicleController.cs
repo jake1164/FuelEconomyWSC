@@ -26,20 +26,22 @@ namespace NotJustMaple.WebService.FuelEconomy.API.Controllers
             return Request<MenuItemModel>(String.Format("vehicle/menu/make?year={0}", year));
         }
 
-        public MenuItemModel GetOptions(Int32 year, String make)
+        public MenuItemModel GetModels(Int32 year, String make)
         {
-            return Request<MenuItemModel>(String.Format("vehicle/menu/options?year={0}&make={1}", year, make));
+            return Request<MenuItemModel>(String.Format("vehicle/menu/model?year={0}&make={1}", year, make));
         }
 
-        /*
-        public VehicleModel GetVehicle(Int32? id)
+        public MenuItemModel GetOptions(Int32 year, String make, String model)
         {
-            if (id != null)
-                return Request<VehicleModel>(String.Format("vehicle/{0}", id));
-            else
-                return null;
+            return Request<MenuItemModel>(String.Format("vehicle/menu/options?year={0}&make={1}&model={2}", year, make, model));
         }
-        */
+        
+        public VehicleModel GetVehicle(Int32 id)
+        {            
+            return Request<VehicleModel>(String.Format("vehicle/{0}", id));
+        }
+
+        [System.Web.Http.NonAction]
         public new T Request<T>(string path)
         {
             Uri uri = new Uri(new Uri(RootURI), path);
